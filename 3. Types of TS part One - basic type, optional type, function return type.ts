@@ -1,3 +1,5 @@
+export {};
+
 // ================== [basic type] ==================
 let a :number = 1;
 let b :string = "abc";
