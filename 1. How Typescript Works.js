@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 // [오류가 발생하는 TS 코드]
 // ========== 1 ==========
-var nico = {
+const nico = {
     nickname: "nick"
 };
 // Property 'hello' does not exist on type '{ nickname: string; }'

@@ -1,8 +1,0 @@
-1.
-특정 파일 TS -> JS 변환 명령어
-tsc '.\1. How Typescript Works.ts' -w
-
-2. export {};
-각 ts 파일별로 변수명이 동일한게 있으면 컴파일 Error 발생
-이를 방지하기 위해 파일 최상단에 export {} 입력
-모듈로 인식해 전역 스코프 충돌 사라짐
