@@ -20,6 +20,9 @@ const d = superPrint2([1, 2, true, false]);
 const genericTwoFn = (a) => a[0];
 // generic 대신 any를 써도 Error 자체는 발생하지 않는다.
 // 하지만 그러면 TS를 쓰는 의미가 없다.
+// [Error] Expected 2 arguments, but got 1
+// 단, b 파라미터를 optional로 바꾸면 Error가 발생하지 않는다. => b?: M
+const z_genericTwo = genericTwoFn([1, 2, 3, 4]);
 const a_genericTwo = genericTwoFn([1, 2, 3, 4], "x");
 const b_genericTwo = genericTwoFn([true, false, true], 1);
 const c_genericTwo = genericTwoFn(["a", "b", "c"], false);
